@@ -1381,6 +1381,7 @@ int print_dhinfo(int pkt_type)
 			if(dhcph_g->dhcp_gip) {
 				fprintf(stdout, ",\"result-relay-agent\":\"%s\"", get_ip_str(dhcph_g->dhcp_gip));
 			}
+                        fprintf(stdout, ",\"boot-filename\":\"%s\"", dhcph_g->dhcp_file);
 
 			fprintf(stdout, "}");
 		} else {		
@@ -1391,6 +1392,7 @@ int print_dhinfo(int pkt_type)
 			if(dhcph_g->dhcp_gip) {
 				fprintf(stdout, "DHCP Relay agent IP - %s\n", get_ip_str(dhcph_g->dhcp_gip));
 			}
+                        fprintf(stdout, "Boot filename - %s\n", dhcph_g->dhcp_file);
 		}
 	} else if( pkt_type == DHCP_MSGACK) {
 		map_all_layer_ptr(DHCP_MSGACK);
@@ -1413,6 +1415,7 @@ int print_dhinfo(int pkt_type)
                         if(dhcph_g->dhcp_gip) {
                                 fprintf(stdout, ",\"result-relay-agent\":\"%s\"", get_ip_str(dhcph_g->dhcp_gip));
                         }
+                        fprintf(stdout, ",\"boot-filename\":\"%s\"", dhcph_g->dhcp_file);
 
                         fprintf(stdout, "}");
                 } else {
@@ -1423,6 +1426,7 @@ int print_dhinfo(int pkt_type)
 			if(dhcph_g->dhcp_gip) {
 				fprintf(stdout, "DHCP Relay agent IP - %s\n", get_ip_str(dhcph_g->dhcp_gip));
 			}
+                        fprintf(stdout, "Boot filename - %s\n", dhcph_g->dhcp_file);
 		}
 	}
 
