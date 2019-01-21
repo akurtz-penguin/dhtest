@@ -23,6 +23,11 @@
         [sargandh@CentOS dhtest-master]$ ls -lh dhtest
         -rwxrwxr-x 1 sargandh sargandh 38K Mar 13 10:47 dhtest
 
+  dhtest 1.5.1 - Boot filename
+  ----------------------------
+
+    * Show boot filename in verbose output
+
   dhtest 1.5 - new 1.5 features supported
   -----------------------------------------
   

@@ -137,7 +137,7 @@ void print_help(char *cmd)
 	fprintf(stdout, "  -j, --json\t\t\t\t# Set the output format to json\n");
 	fprintf(stdout, "  -D, --decline\t\t\t\t# Declines obtained DHCP IP for corresponding MAC\n");
 	fprintf(stdout, "  -V, --verbose\t\t\t\t# Prints DHCP offer and ack details\n");
-	fprintf(stdout, "  dhtest version 1.5\n");
+	fprintf(stdout, "  dhtest version 1.5.1\n");
 }
 
 
